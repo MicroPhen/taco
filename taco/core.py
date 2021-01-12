@@ -290,7 +290,7 @@ class TacoProject():
         else:
             _filename = filename
 
-        data = pd.read_excel(_filename)
+        data = pd.read_excel(_filename).dropna()
         counter = 0
         for _, row in data.iterrows():
             for construct in self.constructs:

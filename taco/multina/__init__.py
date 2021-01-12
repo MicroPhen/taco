@@ -14,7 +14,7 @@ def parse_multina_data(filename:str):
         Returns:
             (pandas.DataFrame): DataFrame containing parsed data.
     """
-    return pd.read_csv(filename, skiprows=1, names = 
+    return pd.read_csv(filename, skiprows=1, encoding='ansi', names = 
             ['number', 
              'well', 
              'name',
